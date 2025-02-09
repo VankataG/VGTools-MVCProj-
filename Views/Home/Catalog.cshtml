@@ -1,0 +1,115 @@
+﻿@{
+    ViewData["Title"] = "Tools Catalog";
+}
+
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .tools-category {
+            margin-bottom: 30px;
+        }
+        .tools-category h2 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .tool-item {
+            display: flex;
+            align-items: center;
+            background: white;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .tool-item img {
+            max-width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .tool-info {
+            padding: 10px;
+        }
+        .tool-info h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #007bff;
+        }
+        .tool-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+
+    <h1>Tools Catalog</h1>
+    <p>Explore our wide range of tools for all your needs</p>
+
+<div class="container">
+    <!-- Hand Tools Category -->
+    <div class="tools-category">
+        <h2>Hand Tools</h2>
+        <div class="tool-item">
+            <img src="https://www.shutterstock.com/shutterstock/photos/17645227/display_1500/stock-photo-old-big-hammer-isolated-in-white-background-17645227.jpg" alt="Hammer">
+            <div class="tool-info">
+                <h3>Hammer</h3>
+                <p>High-quality steel hammer for carpentry and general use.</p>
+            </div>
+        </div>
+        <div class="tool-item">
+            <img src="https://www.supercheapauto.com.au/dw/image/v2/BBRV_PRD/on/demandware.static/-/Sites-srg-internal-master-catalog/default/dw1e3d421c/images/612195/SCA_612195_hi-res.jpg?sw=558&sh=558&sm=fit&q=60" alt="Screwdriver">
+            <div class="tool-info">
+                <h3>Screwdriver Set</h3>
+                <p>Comprehensive set of flathead and Phillips screwdrivers.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Power Tools Category -->
+    <div class="tools-category">
+        <h2>Power Tools</h2>
+        <div class="tool-item">
+            <img src="https://m.media-amazon.com/images/I/61zYCf2CMoL._AC_UF1000,1000_QL80_.jpg" alt="Drill">
+            <div class="tool-info">
+                <h3>Cordless Drill</h3>
+                <p>Powerful 18V cordless drill with adjustable speed settings.</p>
+            </div>
+        </div>
+        <div class="tool-item">
+            <img src="https://makita.ae/wp-content/uploads/9557HPG_C2L0-1.jpg" alt="Angle Grinder">
+            <div class="tool-info">
+                <h3>Angle Grinder</h3>
+                <p>Durable and efficient angle grinder for cutting and grinding tasks.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Tools Catalog Inc. All rights reserved.</p>
+</footer>
+

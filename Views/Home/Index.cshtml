@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container text-center mt-5">
+    <h1 class="display-4 fw-bold">🚗 Масло ли ти гори? Или просто търсиш части? 🔧</h1>
+    <p class="lead">Разгледай нашите специални оферти и промоции!</p>
+</div>
+
+<!-- Промоции -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                <div class="card-body">
+                    <h5 class="card-title">🔥 Намаление на акумулатори -20% 🔥</h5>
+                    <p class="card-text">Само този месец всички акумулатори на топ цена!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                <div class="card-body">
+                    <h5 class="card-title">🛠️ Комплект инструменти -15% 🛠️</h5>
+                    <p class="card-text">Вземи професионални инструменти с ексклузивна отстъпка.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Избор на категория -->
+<div class="container text-center mt-4">
+    <h2 class="mb-3">Избери категория:</h2>
+    <div class="d-flex justify-content-center gap-3">
+        <button class="btn btn-primary category-btn" onclick="navigateTo('engine')">Двигател</button>
+        <button class="btn btn-secondary category-btn" onclick="navigateTo('brakes')">Спирачки</button>
+        <button class="btn btn-success category-btn" onclick="navigateTo('tools')">Инструменти</button>
+    </div>
+</div>
+
+<!-- Анимации и скриптове -->
+<script>
+    function navigateTo(category) {
+        window.location.href = '/Catalog/' + category;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        let elements = document.querySelectorAll('.category-btn');
+        elements.forEach(btn => {
+            btn.addEventListener("mouseover", function() {
+                btn.classList.add("animate__animated", "animate__pulse");
+            });
+            btn.addEventListener("mouseleave", function() {
+                btn.classList.remove("animate__animated", "animate__pulse");
+            });
+        });
+    });
+</script>
+
+<!-- Анимирани стилове -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
